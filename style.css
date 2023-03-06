@@ -1,0 +1,302 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: black;
+    text-align: center;
+    color:white;
+}
+
+@media (max-width:879px){
+    .first-section .first img{
+        padding:5px;
+    }
+    .first-section .title #quote{
+        font-size:50px;
+    }
+    .first-section .title p{
+        font-size:20px;
+    }
+    .first-section .title #btn{
+        width:300px;
+        height:50px;
+        font-size:20px;
+        margin-left:30px;
+    }
+    .first-section .first #logo{
+        margin-left:10px;
+    }
+    .third-section .cancel-popup{
+        margin:auto;
+        flex-wrap: wrap;
+    }
+    .third-section .cancel-popup .first{
+        width:500px;
+    }
+    .third-section .watch-popup .second h3{
+        font-size:20px;
+    }
+    .third-section .watch-popup .second p{
+        font-size:15px;
+    }
+    .third-section .watch-popup .second #img{
+        width:350%;
+    }
+    .third-section .pick-popup .first #btn{
+        width:200px;
+        height:50px;
+        font-size:15px;
+    }
+}
+
+/* First Section*/
+
+
+.first-section{
+    height:800px;
+    z-index: 2;
+}
+
+.first-section::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("images/back.jpg") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .3;
+    box-shadow: inset 150px 50px 200px black,inset -150px -50px 200px black;
+}
+
+.first-section .first{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.first-section .first img{
+    width:150px;
+    height:50px;
+    margin:20px auto 0 auto;
+}
+
+.first-section button{
+    margin:20px 30px 0 0;
+    background-color: red;
+    width:60px;
+    height:30px;
+    color:white;
+    border:0;
+    border-radius:5px;
+}
+
+.first-section .title{
+    margin:auto;
+    margin-top:150px;
+    margin-right:20px;
+}
+.first-section #quote{
+    font-size:100px;
+    font-family:Georgia;
+}
+.first-section p{
+    font-size:30px;
+    font-family:Georgia;
+}
+.first-section .title button{
+    height:70px;
+    width:550px;
+    font-size:30px;
+}
+.first-section .title button span{
+    padding-left:10%;
+}
+
+/* Second Section */
+
+.second-section{
+    background-color: rgb(28, 26, 26);
+}
+.second-section .first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:25%;
+    max-width: 50%;
+}
+.second-section .box{
+    margin:20px 0 20px 0;
+    border-bottom: 3px rgb(28, 26, 26) solid;
+}
+.second-section .box:hover, .first .active{
+    border-bottom: 3px red solid;
+    transform: scale(1.2);
+}
+
+.second-section .first img{
+    width:50px;
+    height:50px;
+}
+
+/* Third Section */
+
+.third-section{
+    position: relative;
+    height:300px;
+}
+
+.cancel-popup, .watch-popup, .pick-popup{
+    position: absolute;
+    left:20%;
+    right:20%;
+    height:300px;
+    margin-top:20px;
+}
+
+.third-section .cancel-popup{
+    display: flex;
+}
+
+.third-section .cancel-popup .first{
+    margin-top:20px;
+    width:350px;
+}
+
+.third-section .cancel-popup .first #msg{
+    font-size:20px;
+    padding:10px;
+    font-family:Georgia;
+}
+.third-section .cancel-popup .first button{
+    margin:20px 30px 0 0;
+    background-color: red;
+    width:300px;
+    height:50px;
+    color:white;
+    border:0;
+    border-radius:5px;
+    font-family:Georgia;
+    font-size:20px;
+}
+
+.third-section .cancel-popup img{
+    min-width: 300px;
+    min-height: 200px;
+    width:50%;
+    padding-left:40px;
+    overflow-y: hidden;
+}
+.third-section .watch-popup{
+    margin-top:20px;
+}
+.third-section .watch-popup .first button{
+    background-color: red;
+    width:300px;
+    height:50px;
+    color:white;
+    border:0;
+    border-radius:5px;
+    font-family:Georgia;
+    font-size:15px;
+
+}
+.third-section .watch-popup .first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.third-section .watch-popup .first #msg{
+    font-size:20px;
+    font-family: Georgia;
+}
+
+.third-section .watch-popup .second{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap:20px;
+}
+
+.third-section .watch-popup .second p{
+    margin:20px 0 20px 0;
+}
+
+.third-section .watch-popup .first button{
+    margin-left:30px;
+}
+
+.third-section .watch-popup .second img{
+    width:320%;
+}
+
+.third-section .pick-popup{
+    margin-top:20px;
+}
+.third-section .pick-popup .first p{
+    font-size:20px;
+    font-family:Georgia;
+}
+.third-section .pick-popup .first button{
+    font-size:20px;
+    font-family:Georgia;
+    margin-top:20px;
+    background-color: red;
+    width:300px;
+    height:50px;
+    color:white;
+    border:0;
+    border-radius:5px;
+}
+
+.third-section .pick-popup .first{
+    font-size:20px;
+    font-family:Georgia;
+    margin-top:20px;
+}
+
+.third-section .pick-popup .second table{
+    margin-top:30px;
+    width:100%;
+    border-width: 0;
+}
+
+.third-section .pick-popup .second table th:first-child{
+    width:500px;
+    padding:40px;
+}
+
+.third-section .pick-popup .second table > tbody tr > td:first-child{
+    padding: 10px;
+    text-align: left;
+}
+
+.third-section .pick-popup .second table tr:nth-child(odd){
+    background-color: #333;
+}
+
+.third-section .pick-popup .second table tr:first-child{
+    background-color: black;
+}
+th,td{
+    padding:10px;
+}
+
+#show{
+    display: none;
+}
+
+/* Footer */
+
+.fourth{
+    margin-top:300px;
+}
+.fourth table{
+    width:100%;
+    margin-top:20px;
+}
